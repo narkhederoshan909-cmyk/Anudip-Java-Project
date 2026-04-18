@@ -1,0 +1,2378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGN Pilani Pune — Build the Career You Deserve</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <style>
+         :root {
+            --red: #C8102E;
+            --red-dark: #9B0B22;
+            --red-light: #F8E8EB;
+            --gold: #B8960C;
+            --gold-light: #F5EFD0;
+            --gold-soft: #E8D48A;
+            --white: #FFFFFF;
+            --off-white: #FAF9F7;
+            --grey-100: #F4F3F0;
+            --grey-300: #D6D3CC;
+            --grey-500: #8A8780;
+            --grey-700: #4A4845;
+            --black: #1A1918;
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-body: 'DM Sans', system-ui, sans-serif;
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --shadow-card: 0 2px 24px rgba(26, 25, 24, .09);
+            --shadow-hover: 0 8px 40px rgba(200, 16, 46, .13);
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            background: var(--white);
+            color: var(--black);
+            font-size: 16px;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: var(--font-display);
+            line-height: 1.2;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        
+        .container {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* ─── NAV ─── */
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background: rgba(255, 255, 255, .96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(200, 16, 46, .12);
+            transition: box-shadow .3s;
+        }
+        
+        nav.scrolled {
+            box-shadow: 0 2px 20px rgba(0, 0, 0, .08);
+        }
+        
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 68px;
+            gap: 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-mark {
+            width: 38px;
+            height: 38px;
+            background: var(--red);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .logo-mark svg {
+            width: 22px;
+            height: 22px;
+            fill: white;
+        }
+        
+        .logo-text {
+            font-family: var(--font-display);
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--black);
+        }
+        
+        .logo-text span {
+            display: block;
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 400;
+            color: var(--grey-500);
+            letter-spacing: .04em;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--grey-700);
+            transition: color .2s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--red);
+        }
+        
+        .nav-cta {
+            display: flex;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            font-family: var(--font-body);
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all .2s;
+            border: none;
+            white-space: nowrap;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--grey-300);
+            color: var(--grey-700);
+            padding: 8px 18px;
+            font-size: 13.5px;
+        }
+        
+        .btn-outline:hover {
+            border-color: var(--red);
+            color: var(--red);
+        }
+        
+        .btn-red {
+            background: var(--red);
+            color: white;
+            padding: 10px 22px;
+            font-size: 14px;
+        }
+        
+        .btn-red:hover {
+            background: var(--red-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 16px rgba(200, 16, 46, .3);
+        }
+        
+        .btn-gold {
+            background: var(--gold);
+            color: white;
+            padding: 10px 22px;
+            font-size: 14px;
+        }
+        
+        .btn-gold:hover {
+            background: #9a7d0a;
+            transform: translateY(-1px);
+        }
+        
+        .btn-lg {
+            padding: 14px 32px;
+            font-size: 16px;
+            border-radius: var(--radius-md);
+        }
+        /* ─── STICKY CTA ─── */
+        
+        .sticky-cta {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 998;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(16px);
+            transition: all .35s;
+        }
+        
+        .sticky-cta.visible {
+            opacity: 1;
+            pointer-events: all;
+            transform: translateY(0);
+        }
+        
+        .sticky-cta .btn {
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, .15);
+        }
+        /* ─── HERO ─── */
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: var(--black);
+            padding: 100px 0 60px;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, #0d0b0a 0%, #1c0507 50%, #0a0608 100%);
+        }
+        
+        .hero-pattern {
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(circle at 20% 50%, rgba(200, 16, 46, .18) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(184, 150, 12, .12) 0%, transparent 40%);
+            pointer-events: none;
+        }
+        
+        .hero-grid-overlay {
+            position: absolute;
+            inset: 0;
+            background-image: linear-gradient(rgba(255, 255, 255, .03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 760px;
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(200, 16, 46, .15);
+            border: 1px solid rgba(200, 16, 46, .35);
+            border-radius: 50px;
+            padding: 6px 16px;
+            margin-bottom: 28px;
+        }
+        
+        .hero-badge-dot {
+            width: 7px;
+            height: 7px;
+            background: var(--red);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: .5;
+                transform: scale(1.4);
+            }
+        }
+        
+        .hero-badge span {
+            font-size: 12.5px;
+            color: rgba(255, 255, 255, .75);
+            font-weight: 500;
+            letter-spacing: .04em;
+        }
+        
+        h1.hero-headline {
+            font-size: clamp(40px, 6vw, 72px);
+            color: white;
+            font-weight: 900;
+            margin-bottom: 22px;
+            letter-spacing: -.02em;
+        }
+        
+        h1.hero-headline em {
+            color: var(--gold-soft);
+            font-style: normal;
+        }
+        
+        .hero-sub {
+            font-size: 17px;
+            color: rgba(255, 255, 255, .65);
+            max-width: 540px;
+            margin-bottom: 36px;
+            font-weight: 300;
+            line-height: 1.7;
+        }
+        
+        .hero-toggle {
+            display: inline-flex;
+            background: rgba(255, 255, 255, .08);
+            border: 1px solid rgba(255, 255, 255, .12);
+            border-radius: 50px;
+            padding: 4px;
+            gap: 2px;
+            margin-bottom: 36px;
+        }
+        
+        .hero-toggle button {
+            font-family: var(--font-body);
+            padding: 8px 22px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all .22s;
+            background: transparent;
+            color: rgba(255, 255, 255, .55);
+        }
+        
+        .hero-toggle button.active {
+            background: var(--red);
+            color: white;
+            box-shadow: 0 2px 12px rgba(200, 16, 46, .4);
+        }
+        
+        .hero-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .hero-scroll-hint {
+            position: absolute;
+            bottom: 32px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            color: rgba(255, 255, 255, .35);
+            font-size: 12px;
+        }
+        
+        .scroll-arrow {
+            width: 20px;
+            height: 20px;
+            border-right: 1.5px solid rgba(255, 255, 255, .3);
+            border-bottom: 1.5px solid rgba(255, 255, 255, .3);
+            transform: rotate(45deg);
+            animation: bounce 1.8s infinite;
+        }
+        
+        @keyframes bounce {
+            0%,
+            100% {
+                transform: rotate(45deg) translateY(0);
+            }
+            50% {
+                transform: rotate(45deg) translateY(6px);
+            }
+        }
+        
+        .hero-stats-row {
+            display: flex;
+            gap: 32px;
+            margin-top: 52px;
+            padding-top: 36px;
+            border-top: 1px solid rgba(255, 255, 255, .08);
+            flex-wrap: wrap;
+        }
+        
+        .hero-stat {
+            text-align: left;
+        }
+        
+        .hero-stat-num {
+            font-family: var(--font-display);
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+            line-height: 1;
+        }
+        
+        .hero-stat-num em {
+            color: var(--gold-soft);
+            font-style: normal;
+        }
+        
+        .hero-stat-label {
+            font-size: 12px;
+            color: rgba(255, 255, 255, .45);
+            margin-top: 4px;
+            font-weight: 400;
+        }
+        /* ─── TRUST BAR ─── */
+        
+        .trust-bar {
+            background: var(--off-white);
+            border-top: 3px solid var(--red);
+            border-bottom: 1px solid var(--grey-300);
+        }
+        
+        .trust-bar-inner {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+        }
+        
+        .trust-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 36px 24px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .trust-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 20%;
+            height: 60%;
+            width: 1px;
+            background: var(--grey-300);
+        }
+        
+        .trust-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--red-light);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 14px;
+            font-size: 22px;
+        }
+        
+        .trust-num {
+            font-family: var(--font-display);
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--red);
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+        
+        .trust-label {
+            font-size: 13px;
+            color: var(--grey-500);
+            font-weight: 400;
+        }
+        /* ─── SECTION COMMONS ─── */
+        
+        section {
+            padding: 88px 0;
+        }
+        
+        .section-tag {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--red);
+            background: var(--red-light);
+            padding: 4px 14px;
+            border-radius: 50px;
+            margin-bottom: 16px;
+        }
+        
+        .section-headline {
+            font-size: clamp(28px, 4vw, 44px);
+            font-weight: 700;
+            margin-bottom: 14px;
+            letter-spacing: -.01em;
+        }
+        
+        .section-sub {
+            font-size: 16px;
+            color: var(--grey-500);
+            max-width: 520px;
+        }
+        
+        .section-head {
+            margin-bottom: 52px;
+        }
+        /* ─── PROGRAMME EXPLORER ─── */
+        
+        .programme-section {
+            background: var(--grey-100);
+        }
+        
+        .filter-bar {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        
+        .filter-btn {
+            font-family: var(--font-body);
+            padding: 8px 20px;
+            border-radius: 50px;
+            border: 1.5px solid var(--grey-300);
+            background: white;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all .2s;
+            color: var(--grey-700);
+        }
+        
+        .filter-btn.active,
+        .filter-btn:hover {
+            border-color: var(--red);
+            color: var(--red);
+            background: var(--red-light);
+        }
+        
+        .programme-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        
+        .prog-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--grey-300);
+            overflow: hidden;
+            transition: all .3s;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .prog-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-4px);
+        }
+        
+        .prog-card-top {
+            background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
+            padding: 28px 24px 22px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .prog-card-top::after {
+            content: '';
+            position: absolute;
+            right: -20px;
+            top: -20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .07);
+        }
+        
+        .prog-level-badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: .07em;
+            text-transform: uppercase;
+            background: rgba(255, 255, 255, .15);
+            color: rgba(255, 255, 255, .9);
+            padding: 3px 10px;
+            border-radius: 50px;
+            margin-bottom: 12px;
+        }
+        
+        .prog-name {
+            font-family: var(--font-display);
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            line-height: 1.3;
+        }
+        
+        .prog-icon {
+            position: absolute;
+            right: 22px;
+            top: 24px;
+            font-size: 28px;
+            opacity: .6;
+        }
+        
+        .prog-card-body {
+            padding: 22px 24px;
+        }
+        
+        .prog-meta {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+        
+        .prog-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: var(--grey-500);
+        }
+        
+        .prog-meta-item svg {
+            flex-shrink: 0;
+        }
+        
+        .prog-outcome {
+            font-size: 13.5px;
+            color: var(--grey-700);
+            margin-bottom: 18px;
+            line-height: 1.5;
+        }
+        
+        .prog-outcome strong {
+            color: var(--black);
+        }
+        
+        .prog-cta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--grey-100);
+            padding-top: 16px;
+        }
+        
+        .prog-cta a {
+            font-size: 13.5px;
+            font-weight: 600;
+            color: var(--red);
+        }
+        
+        .prog-fee {
+            font-size: 13px;
+            color: var(--grey-500);
+        }
+        /* ─── MICRO CTA ─── */
+        
+        .micro-cta-section {
+            background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 64px 0;
+        }
+        
+        .micro-cta-section::before {
+            content: '';
+            position: absolute;
+            right: -80px;
+            top: -80px;
+            width: 380px;
+            height: 380px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .05);
+        }
+        
+        .micro-cta-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 32px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .micro-cta-text h2 {
+            font-family: var(--font-display);
+            font-size: 32px;
+            color: white;
+            margin-bottom: 8px;
+        }
+        
+        .micro-cta-text p {
+            color: rgba(255, 255, 255, .7);
+            font-size: 15px;
+        }
+        
+        .btn-white {
+            background: white;
+            color: var(--red);
+            padding: 14px 32px;
+            font-size: 15px;
+            font-weight: 700;
+            border-radius: var(--radius-md);
+        }
+        
+        .btn-white:hover {
+            background: var(--off-white);
+            transform: translateY(-1px);
+        }
+        /* ─── OUTCOMES ─── */
+        
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        
+        .outcome-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .outcome-card {
+            background: white;
+            border: 1px solid var(--grey-300);
+            border-radius: var(--radius-lg);
+            padding: 28px 24px;
+            box-shadow: var(--shadow-card);
+        }
+        
+        .outcome-card.accent {
+            border-color: var(--red);
+            background: var(--red-light);
+        }
+        
+        .outcome-val {
+            font-family: var(--font-display);
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--red);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        
+        .outcome-label {
+            font-size: 13.5px;
+            color: var(--grey-700);
+            line-height: 1.4;
+        }
+        
+        .employer-label {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            color: var(--grey-500);
+            margin-bottom: 20px;
+        }
+        
+        .employer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .employer-tag {
+            background: var(--grey-100);
+            border: 1px solid var(--grey-300);
+            border-radius: var(--radius-sm);
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--grey-700);
+        }
+        /* ─── TESTIMONIALS ─── */
+        
+        .testimonials-section {
+            background: var(--off-white);
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border: 1px solid var(--grey-300);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            transition: box-shadow .2s;
+        }
+        
+        .testimonial-card:hover {
+            box-shadow: var(--shadow-card);
+        }
+        
+        .t-quote {
+            font-size: 36px;
+            color: var(--red);
+            font-family: Georgia, serif;
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+        
+        .t-text {
+            font-size: 14.5px;
+            color: var(--grey-700);
+            line-height: 1.65;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .t-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .t-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--red), var(--red-dark));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .t-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--black);
+        }
+        
+        .t-role {
+            font-size: 12px;
+            color: var(--grey-500);
+        }
+        
+        .video-card {
+            background: linear-gradient(135deg, var(--black) 0%, #2a0a10 100%);
+            border-radius: var(--radius-lg);
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .video-thumb {
+            width: 100%;
+            aspect-ratio: 16/10;
+            object-fit: cover;
+            opacity: .45;
+        }
+        
+        .video-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+        
+        .play-btn {
+            width: 64px;
+            height: 64px;
+            background: var(--red);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 0 12px rgba(200, 16, 46, .2);
+        }
+        
+        .play-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+            margin-left: 4px;
+        }
+        
+        .video-caption {
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            padding: 0 20px;
+        }
+        /* ─── EVENTS ─── */
+        
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .event-card {
+            background: white;
+            border: 1px solid var(--grey-300);
+            border-radius: var(--radius-lg);
+            padding: 22px 24px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            transition: all .2s;
+        }
+        
+        .event-card:hover {
+            box-shadow: var(--shadow-card);
+            border-color: var(--red);
+        }
+        
+        .event-date-block {
+            background: var(--red-light);
+            border-radius: var(--radius-sm);
+            padding: 10px 14px;
+            text-align: center;
+            flex-shrink: 0;
+            min-width: 56px;
+        }
+        
+        .event-day {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--red);
+            line-height: 1;
+        }
+        
+        .event-month {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            color: var(--red);
+            margin-top: 2px;
+        }
+        
+        .event-type-badge {
+            font-size: 11px;
+            font-weight: 600;
+            background: var(--gold-light);
+            color: var(--gold);
+            padding: 2px 10px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 8px;
+            letter-spacing: .04em;
+        }
+        
+        .event-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--black);
+            margin-bottom: 4px;
+        }
+        
+        .event-meta {
+            font-size: 13px;
+            color: var(--grey-500);
+            margin-bottom: 14px;
+        }
+        
+        .event-reg {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--red);
+            cursor: pointer;
+        }
+        
+        .event-reg:hover {
+            text-decoration: underline;
+        }
+        /* ─── CAMPUS ─── */
+        
+        .campus-section {
+            background: var(--grey-100);
+        }
+        
+        .campus-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 16px;
+        }
+        
+        .campus-card {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            position: relative;
+            background: var(--grey-700);
+        }
+        
+        .campus-card.large {
+            grid-row: 1/3;
+        }
+        
+        .campus-card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            min-height: 200px;
+            display: block;
+        }
+        
+        .campus-card-label {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            background: rgba(0, 0, 0, .65);
+            backdrop-filter: blur(8px);
+            border-radius: 50px;
+            padding: 5px 14px;
+            font-size: 12.5px;
+            font-weight: 500;
+            color: white;
+        }
+        
+        .virtual-tour-banner {
+            background: linear-gradient(135deg, var(--black) 0%, #1a0206 100%);
+            border-radius: var(--radius-lg);
+            padding: 32px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 28px;
+        }
+        
+        .virtual-tour-text h3 {
+            font-family: var(--font-display);
+            font-size: 22px;
+            color: white;
+            margin-bottom: 6px;
+        }
+        
+        .virtual-tour-text p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, .55);
+        }
+        /* ─── FAQ ─── */
+        
+        .faq-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: start;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid var(--grey-300);
+            padding: 20px 0;
+            cursor: pointer;
+        }
+        
+        .faq-item:first-child {
+            border-top: 1px solid var(--grey-300);
+        }
+        
+        .faq-q {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .faq-q span {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--black);
+        }
+        
+        .faq-icon {
+            width: 24px;
+            height: 24px;
+            background: var(--red-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: transform .2s;
+            font-size: 16px;
+            color: var(--red);
+        }
+        
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+        }
+        
+        .faq-a {
+            font-size: 14px;
+            color: var(--grey-500);
+            margin-top: 12px;
+            line-height: 1.65;
+            display: none;
+        }
+        
+        .faq-item.open .faq-a {
+            display: block;
+        }
+        
+        .chat-widget {
+            background: white;
+            border: 1px solid var(--grey-300);
+            border-radius: var(--radius-xl);
+            padding: 32px;
+            text-align: center;
+            box-shadow: var(--shadow-card);
+        }
+        
+        .chat-avatar {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--red), var(--red-dark));
+            border-radius: 50%;
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+        }
+        
+        .chat-widget h3 {
+            font-family: var(--font-display);
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        
+        .chat-widget p {
+            font-size: 14px;
+            color: var(--grey-500);
+            margin-bottom: 22px;
+        }
+        
+        .wa-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #25D366;
+            color: white;
+            border-radius: var(--radius-md);
+            padding: 13px 24px;
+            font-weight: 600;
+            font-size: 15px;
+            width: 100%;
+            margin-bottom: 12px;
+            cursor: pointer;
+            border: none;
+            font-family: var(--font-body);
+            transition: all .2s;
+        }
+        
+        .wa-btn:hover {
+            background: #1da051;
+            transform: translateY(-1px);
+        }
+        
+        .chat-divider {
+            font-size: 12px;
+            color: var(--grey-300);
+            margin: 12px 0;
+        }
+        /* ─── ENQUIRY FORM ─── */
+        
+        .enquiry-section {
+            background: linear-gradient(135deg, #0d0b0a 0%, #1c0507 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .enquiry-section::before {
+            content: '';
+            position: absolute;
+            left: -120px;
+            bottom: -120px;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: rgba(200, 16, 46, .08);
+            pointer-events: none;
+        }
+        
+        .enquiry-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .enquiry-left h2 {
+            font-family: var(--font-display);
+            font-size: 38px;
+            color: white;
+            margin-bottom: 16px;
+        }
+        
+        .enquiry-left p {
+            font-size: 15px;
+            color: rgba(255, 255, 255, .55);
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+        
+        .enquiry-perks {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .enquiry-perks li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, .7);
+        }
+        
+        .perk-check {
+            width: 20px;
+            height: 20px;
+            background: var(--red);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 11px;
+            color: white;
+        }
+        
+        .form-card {
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: 36px;
+        }
+        
+        .progress-bar {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 28px;
+            align-items: center;
+        }
+        
+        .progress-step {
+            flex: 1;
+            height: 4px;
+            border-radius: 4px;
+            background: var(--grey-300);
+            transition: background .3s;
+        }
+        
+        .progress-step.done {
+            background: var(--red);
+        }
+        
+        .progress-label {
+            font-size: 12px;
+            color: var(--grey-500);
+            text-align: right;
+            min-width: 60px;
+        }
+        
+        .form-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 22px;
+            color: var(--black);
+        }
+        
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-bottom: 14px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .form-group.full {
+            grid-column: 1/-1;
+        }
+        
+        .form-group label {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--grey-700);
+        }
+        
+        .form-group input,
+        .form-group select {
+            padding: 11px 14px;
+            border: 1.5px solid var(--grey-300);
+            border-radius: var(--radius-sm);
+            font-size: 14px;
+            font-family: var(--font-body);
+            color: var(--black);
+            transition: border-color .2s;
+            outline: none;
+            width: 100%;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: var(--red);
+        }
+        
+        .form-group select {
+            cursor: pointer;
+        }
+        
+        .form-btn-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        
+        .step-panel {
+            display: none;
+        }
+        
+        .step-panel.active {
+            display: block;
+        }
+        /* ─── FOOTER ─── */
+        
+        footer {
+            background: var(--black);
+            padding: 52px 0 28px;
+        }
+        
+        .footer-top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-brand p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, .4);
+            margin-top: 12px;
+            line-height: 1.65;
+        }
+        
+        .footer-col h4 {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .07em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .3);
+            margin-bottom: 16px;
+        }
+        
+        .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .footer-col ul li a {
+            font-size: 14px;
+            color: rgba(255, 255, 255, .55);
+            transition: color .2s;
+        }
+        
+        .footer-col ul li a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, .07);
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .footer-bottom p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, .3);
+        }
+        
+        .accred-badges {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            background: rgba(255, 255, 255, .06);
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 6px;
+            padding: 5px 12px;
+            font-size: 11.5px;
+            color: rgba(255, 255, 255, .45);
+            font-weight: 500;
+        }
+        /* ─── MODAL ─── */
+        
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .6);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(4px);
+        }
+        
+        .modal-overlay.open {
+            display: flex;
+        }
+        
+        .modal {
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: 36px;
+            width: 90%;
+            max-width: 480px;
+            position: relative;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 32px;
+            height: 32px;
+            background: var(--grey-100);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--grey-700);
+        }
+        
+        .modal h3 {
+            font-family: var(--font-display);
+            font-size: 22px;
+            margin-bottom: 6px;
+        }
+        
+        .modal p {
+            font-size: 14px;
+            color: var(--grey-500);
+            margin-bottom: 22px;
+        }
+        /* ─── RESPONSIVE ─── */
+        
+        @media(max-width:900px) {
+            .programme-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+            .events-grid {
+                grid-template-columns: 1fr;
+            }
+            .faq-layout {
+                grid-template-columns: 1fr;
+            }
+            .enquiry-inner {
+                grid-template-columns: 1fr;
+            }
+            .footer-top {
+                grid-template-columns: 1fr 1fr;
+            }
+            .outcomes-grid {
+                grid-template-columns: 1fr;
+            }
+            .trust-bar-inner {
+                grid-template-columns: 1fr 1fr;
+            }
+            .trust-item::after {
+                display: none;
+            }
+            .campus-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .campus-card.large {
+                grid-column: 1/-1;
+                grid-row: auto;
+            }
+        }
+        
+        @media(max-width:600px) {
+            .nav-links {
+                display: none;
+            }
+            .programme-grid {
+                grid-template-columns: 1fr;
+            }
+            .outcome-stats {
+                grid-template-columns: 1fr 1fr;
+            }
+            .trust-bar-inner {
+                grid-template-columns: 1fr 1fr;
+            }
+            .campus-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-top {
+                grid-template-columns: 1fr;
+            }
+            .hero-stats-row {
+                gap: 24px;
+            }
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* Animations */
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="mainNav">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="#" class="logo">
+                    <div class="logo-mark">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L4 6v6c0 5.5 3.4 10.7 8 12 4.6-1.3 8-6.5 8-12V6l-8-4z"/></svg>
+                    </div>
+                    <div class="logo-text">Roshan<span>Narkhade</span></div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#programmes">Programmes</a></li>
+                    <li><a href="#outcomes">Outcomes</a></li>
+                    <li><a href="#campus">Campus</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <button class="btn btn-outline" onclick="openModal()">Download Brochure</button>
+                    <a href="#enquiry" class="btn btn-red">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- STICKY CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <a href="#enquiry" class="btn btn-red" style="padding:12px 24px;font-size:14px;border-radius:50px;">Apply Now →</a>
+        <button class="btn btn-gold" style="padding:12px 24px;font-size:14px;border-radius:50px;" onclick="openModal()">Get Brochure</button>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-pattern"></div>
+        <div class="hero-grid-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <div class="hero-badge-dot"></div>
+                    <span>Admissions Open — 2025–26 Batch</span>
+                </div>
+                <h1 class="hero-headline">
+                    Graduate Into a Career<br/>the World <em>Competes</em> For
+                </h1>
+                <p class="hero-sub">RGN Pilani Pune combines India's most rigorous engineering curriculum with Dubai's global business ecosystem. Our graduates don't just get placed — they get headhunted.</p>
+                <div class="hero-toggle" id="programToggle">
+                    <button class="active" data-prog="UG">UG</button>
+                    <button data-prog="PG">PG</button>
+                    <button data-prog="PhD">PhD</button>
+                </div>
+                <p id="heroToggleText" style="font-size:14px;color:rgba(255,255,255,.5);margin-bottom:28px;">4-year B.E. / B.Tech programs with 100% placement support</p>
+                <div class="hero-actions">
+                    <a href="#enquiry" class="btn btn-red btn-lg">Apply Now →</a>
+                    <a href="#enquiry" class="btn btn-lg" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:white;">📅 Book Free Counselling</a>
+                </div>
+                <div class="hero-stats-row">
+                    <div class="hero-stat">
+                        <div class="hero-stat-num"><em>#1</em></div>
+                        <div class="hero-stat-label">Ranked Private University<br/>in India — NIRF</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num"><em>AED 65K</em></div>
+                        <div class="hero-stat-label">Average Starting<br/>Salary (UAE)</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num"><em>98%</em></div>
+                        <div class="hero-stat-label">Placement Rate<br/>within 3 months</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num"><em>40+</em></div>
+                        <div class="hero-stat-label">Countries in<br/>Alumni Network</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="trust-bar">
+        <div class="container">
+            <div class="trust-bar-inner">
+                <div class="trust-item fade-in">
+                    <div class="trust-icon">🏆</div>
+                    <div class="trust-num">A++</div>
+                    <div class="trust-label">NAAC Grade — Highest in India</div>
+                </div>
+                <div class="trust-item fade-in">
+                    <div class="trust-icon">👥</div>
+                    <div class="trust-num">80,000+</div>
+                    <div class="trust-label">Global Alumni Network</div>
+                </div>
+                <div class="trust-item fade-in">
+                    <div class="trust-icon">💼</div>
+                    <div class="trust-num">500+</div>
+                    <div class="trust-label">Recruiting Companies Worldwide</div>
+                </div>
+                <div class="trust-item fade-in">
+                    <div class="trust-icon">🌍</div>
+                    <div class="trust-num">40+</div>
+                    <div class="trust-label">Countries — Global Presence</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROGRAMME EXPLORER -->
+    <section class="programme-section" id="programmes">
+        <div class="container">
+            <div class="section-head fade-in">
+                <span class="section-tag">Programme Explorer</span>
+                <h2 class="section-headline">Find Your Path to the Top</h2>
+                <p class="section-sub">Every programme is designed around one question: what will make you irreplaceable in the job market?</p>
+            </div>
+            <div class="filter-bar fade-in" id="filterBar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ug">Undergraduate</button>
+                <button class="filter-btn" data-filter="pg">Postgraduate</button>
+                <button class="filter-btn" data-filter="tech">Tech & Engineering</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+            </div>
+            <div class="programme-grid" id="programmeGrid">
+                <div class="prog-card fade-in" data-level="ug" data-field="tech">
+                    <div class="prog-card-top">
+                        <span class="prog-icon">⚙️</span>
+                        <div class="prog-level-badge">UG · 4 Years</div>
+                        <div class="prog-name">B.E. Computer Science</div>
+                    </div>
+                    <div class="prog-card-body">
+                        <div class="prog-meta">
+                            <div class="prog-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>4 Years</div>
+                            <div class="prog-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>AED 68,000/yr</div>
+                        </div>
+                        <div class="prog-outcome">Graduates placed at <strong>Google, Microsoft, Amazon, Noon, Careem</strong> — avg. AED 75K starting salary.</div>
+                        <div class="prog-cta"><a href="#enquiry">Apply Now →</a><span class="prog-fee">Scholarships available</span></div>
+                    </div>
+                </div>
+                <div class="prog-card fade-in" data-level="ug" data-field="tech">
+                    <div class="prog-card-top" style="background:linear-gradient(135deg,#7B2D8B,#4A1A56)">
+                        <span class="prog-icon">⚡</span>
+                        <div class="prog-level-badge">UG · 4 Years</div>
+                        <div class="prog-name">B.E. Electrical & Electronics</div>
+                    </div>
+                    <div class="prog-card-body">
+                        <div class="prog-meta">
+                            <div class="prog-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>4 Years</div>
+                            <div class="prog-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>AED 64,000/yr</div>
+                        </div>
+                        <div class="prog-outcome">Strong demand in <strong>smart cities, renewable energy, and IoT</strong> sectors across UAE & GCC.</div>
+                        <div class="prog-cta"><a href="#enquiry">Apply Now →</a><span class="prog-fee">Merit scholarships</span></div>
+                    </div>
+                </div>
+                <div class="prog-card fade-in" data-level="ug" data-field="tech">
+                    <div class="prog-card-top" style="background:linear-gradient(135deg,#1a6b3a,#0d4223)">
+                        <span class="prog-icon">🧪</span>
+                        <div class="prog-level-badge">UG · 4 Years</div>
+                        <div class="prog-name">B.E. Chemical Engineering</div>
+                    </div>
+                    <div class="prog-card-body">
+                        <div class="prog-meta">
+                            <div class="prog-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>4 Years</div>
+                            <div class="prog-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>AED 62,000/yr</div>
+                        </div>
+                        <div class="prog-outcome">High-demand in <strong>ADNOC, Aramco, TAQA</strong> — UAE's energy sector absorbs 70% of graduates.</div>
+                        <div class="prog-cta"><a href="#enquiry">Apply Now →</a><span class="prog-fee">Industry sponsorships</span></div>
+                    </div>
+                </div>
+                <div class="prog-card fade-in" data-level="pg" data-field="tech">
+                    <div class="prog-card-top" style="background:linear-gradient(135deg,#0a4a7a,#06294a)">
+                        <span class="prog-icon">🤖</span>
+                        <div class="prog-level-badge">PG · 2 Years</div>
+                        <div class="prog-name">M.E. Data Science & AI</div>
+                    </div>
+                    <div class="prog-card-body">
+                        <div class="prog-meta">
+                            <div class="prog-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>2 Years</div>
+                            <div class="prog-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>AED 52,000/yr</div>
+                        </div>
+                        <div class="prog-outcome">Average post-PG salary of <strong>AED 120K+</strong>. UAE's #1 AI talent demand sector.</div>
+                        <div class="prog-cta"><a href="#enquiry">Apply Now →</a><span class="prog-fee">Lateral entry available</span></div>
+                    </div>
+                </div>
+                <div class="prog-card fade-in" data-level="pg" data-field="business">
+                    <div class="prog-card-top" style="background:linear-gradient(135deg,#8B6914,#5a4209)">
+                        <span class="prog-icon">📊</span>
+                        <div class="prog-level-badge">PG · 2 Years</div>
+                        <div class="prog-name">MBA — Technology Management</div>
+                    </div>
+                    <div class="prog-card-body">
+                        <div class="prog-meta">
+                            <div class="prog-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>2 Years</div>
+                            <div class="prog-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>AED 58,000/yr</div>
+                        </div>
+                        <div class="prog-outcome">Built for engineers moving into <strong>leadership roles</strong> — BFSI, consulting, fintech.</div>
+                        <div class="prog-cta"><a href="#enquiry">Apply Now →</a><span class="prog-fee">GMAT waiver available</span></div>
+                    </div>
+                </div>
+                <div class="prog-card fade-in" data-level="pg" data-field="tech">
+                    <div class="prog-card-top" style="background:linear-gradient(135deg,#3d1a6e,#200e3e)">
+                        <span class="prog-icon">🔬</span>
+                        <div class="prog-level-badge">PhD · 3–5 Years</div>
+                        <div class="prog-name">PhD Engineering & Science</div>
+                    </div>
+                    <div class="prog-card-body">
+                        <div class="prog-meta">
+                            <div class="prog-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>3–5 Years</div>
+                            <div class="prog-meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Fully Funded</div>
+                        </div>
+                        <div class="prog-outcome">Work alongside faculty publishing in <strong>Nature, IEEE, Elsevier</strong>. Full stipend + housing allowance.</div>
+                        <div class="prog-cta"><a href="#enquiry">Apply Now →</a><span class="prog-fee">Full funding available</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MICRO CTA — BROCHURE -->
+    <div class="micro-cta-section">
+        <div class="container">
+            <div class="micro-cta-inner">
+                <div class="micro-cta-text">
+                    <h2>Not sure which programme fits?</h2>
+                    <p>Download our comprehensive 2025 Programme Guide — fees, curriculum, career outcomes, and scholarship details in one place.</p>
+                </div>
+                <button class="btn btn-white btn-lg" onclick="openModal()">📥 Download Free Brochure</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- OUTCOMES -->
+    <section id="outcomes">
+        <div class="container">
+            <div class="outcomes-grid">
+                <div class="fade-in">
+                    <span class="section-tag">Career Outcomes</span>
+                    <h2 class="section-headline" style="margin-bottom:12px;">Your Degree Pays for Itself</h2>
+                    <p style="color:var(--grey-500);font-size:15px;margin-bottom:32px;">BITS Pilani Dubai graduates consistently outperform UAE market averages. Our placement cell works year-round — not just at the end of your degree.</p>
+                    <div class="outcome-stats">
+                        <div class="outcome-card accent">
+                            <div class="outcome-val">98%</div>
+                            <div class="outcome-label">Placement rate within 90 days of graduation</div>
+                        </div>
+                        <div class="outcome-card">
+                            <div class="outcome-val" style="color:var(--gold);">AED 65K</div>
+                            <div class="outcome-label">Average annual starting salary (UG 2024 batch)</div>
+                        </div>
+                        <div class="outcome-card">
+                            <div class="outcome-val">3.5x</div>
+                            <div class="outcome-label">Salary growth in first 5 years — above market average</div>
+                        </div>
+                        <div class="outcome-card">
+                            <div class="outcome-val" style="color:var(--black);">500+</div>
+                            <div class="outcome-label">Hiring partner companies globally</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <p class="employer-label">Where Our Graduates Work</p>
+                    <div class="employer-grid" style="margin-bottom:28px;">
+                        <div class="employer-tag">Google</div>
+                        <div class="employer-tag">Microsoft</div>
+                        <div class="employer-tag">Amazon</div>
+                        <div class="employer-tag">McKinsey</div>
+                        <div class="employer-tag">Noon</div>
+                        <div class="employer-tag">Careem</div>
+                        <div class="employer-tag">ADNOC</div>
+                        <div class="employer-tag">Emirates</div>
+                        <div class="employer-tag">PwC</div>
+                        <div class="employer-tag">Deloitte</div>
+                        <div class="employer-tag">Accenture</div>
+                        <div class="employer-tag">IBM</div>
+                        <div class="employer-tag">SAP</div>
+                        <div class="employer-tag">Cisco</div>
+                        <div class="employer-tag">Siemens</div>
+                        <div class="employer-tag">+485 more</div>
+                    </div>
+                    <div style="background:var(--grey-100);border-radius:var(--radius-lg);padding:22px 24px;">
+                        <div style="font-size:13px;font-weight:600;color:var(--grey-500);margin-bottom:6px;">Highest Package — 2024 Batch</div>
+                        <div style="font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--black);">AED 2,20,000 <span style="font-size:16px;font-weight:400;color:var(--grey-500);">per year</span></div>
+                        <div style="font-size:13px;color:var(--grey-500);margin-top:4px;">B.E. Computer Science → FAANG company</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-head fade-in" style="text-align:center;margin:0 auto 52px;max-width:540px;">
+                <span class="section-tag">Student Stories</span>
+                <h2 class="section-headline">Straight From the Source</h2>
+                <p class="section-sub" style="margin:0 auto;">Not marketing copy — real stories from students who made the leap.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="t-quote">"</div>
+                    <p class="t-text">I had offers from universities in the UK and Canada. I chose BITS Dubai because the faculty-to-industry connection here is unreal. My professor introduced me to my current employer during a guest lecture in Year 3.</p>
+                    <div class="t-author">
+                        <div class="t-avatar">AR</div>
+                        <div>
+                            <div class="t-name">Aanya Rathore</div>
+                            <div class="t-role">B.E. CS, 2022 · Data Engineer @ Google, Dubai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="t-quote">"</div>
+                    <p class="t-text">My parents were worried about ROI. The placement cell sent them a presentation — I had three job offers before graduation. I've tripled my salary in four years. The degree paid for itself in 18 months.</p>
+                    <div class="t-author">
+                        <div class="t-avatar">KM</div>
+                        <div>
+                            <div class="t-name">Kiran Mehta</div>
+                            <div class="t-role">MBA, 2021 · Product Lead @ Careem</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card fade-in">
+                    <div style="width:100%;height:100%;background:linear-gradient(135deg,#1a0206 0%,#0d0407 100%);min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:32px;border-radius:var(--radius-lg);">
+                        <div class="play-btn">
+                            <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        </div>
+                        <div style="text-align:center;">
+                            <div style="color:rgba(255,255,255,.4);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;">Video Testimonial</div>
+                            <div style="color:white;font-size:15px;font-weight:500;">"From Dubai campus to Silicon Valley"</div>
+                            <div style="color:rgba(255,255,255,.5);font-size:13px;margin-top:4px;">Rahul Nair · SWE @ Meta, San Francisco</div>
+                        </div>
+                        <div style="display:inline-flex;gap:8px;align-items:center;background:rgba(200,16,46,.2);border:1px solid rgba(200,16,46,.4);border-radius:50px;padding:5px 14px;">
+                            <div style="width:6px;height:6px;background:var(--red);border-radius:50%;"></div>
+                            <span style="font-size:12px;color:rgba(255,255,255,.6);">Watch 4 min story</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events">
+        <div class="container">
+            <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:40px;" class="fade-in">
+                <div>
+                    <span class="section-tag">Events & Open Days</span>
+                    <h2 class="section-headline">Come See It For Yourself</h2>
+                </div>
+                <div class="filter-bar" style="margin:0;">
+                    <button class="filter-btn active" data-efilter="all">All</button>
+                    <button class="filter-btn" data-efilter="openday">Open Day</button>
+                    <button class="filter-btn" data-efilter="webinar">Webinar</button>
+                    <button class="filter-btn" data-efilter="counselling">Counselling</button>
+                </div>
+            </div>
+            <div class="events-grid fade-in">
+                <div class="event-card" data-etype="openday">
+                    <div class="event-date-block">
+                        <div class="event-day">14</div>
+                        <div class="event-month">Jun</div>
+                    </div>
+                    <div style="flex:1;">
+                        <span class="event-type-badge">Open Day</span>
+                        <div class="event-title">Summer Campus Open Day 2025</div>
+                        <div class="event-meta">📍 BITS Dubai Campus, Silicon Oasis · 10:00 AM – 4:00 PM</div>
+                        <div class="event-reg" onclick="document.getElementById('enquiry').scrollIntoView({behavior:'smooth'})">Register Free →</div>
+                    </div>
+                </div>
+                <div class="event-card" data-etype="webinar">
+                    <div class="event-date-block">
+                        <div class="event-day">18</div>
+                        <div class="event-month">Jun</div>
+                    </div>
+                    <div style="flex:1;">
+                        <span class="event-type-badge">Webinar</span>
+                        <div class="event-title">AI & Future Tech Careers — Live Q&A</div>
+                        <div class="event-meta">🌐 Online · 7:00 PM – 8:30 PM GST</div>
+                        <div class="event-reg" onclick="document.getElementById('enquiry').scrollIntoView({behavior:'smooth'})">Register Free →</div>
+                    </div>
+                </div>
+                <div class="event-card" data-etype="counselling">
+                    <div class="event-date-block">
+                        <div class="event-day">22</div>
+                        <div class="event-month">Jun</div>
+                    </div>
+                    <div style="flex:1;">
+                        <span class="event-type-badge">Counselling</span>
+                        <div class="event-title">1:1 Scholarship & Admissions Counselling</div>
+                        <div class="event-meta">📍 Dubai Knowledge Park · By Appointment</div>
+                        <div class="event-reg" onclick="document.getElementById('enquiry').scrollIntoView({behavior:'smooth'})">Book Slot →</div>
+                    </div>
+                </div>
+                <div class="event-card" data-etype="webinar">
+                    <div class="event-date-block">
+                        <div class="event-day">28</div>
+                        <div class="event-month">Jun</div>
+                    </div>
+                    <div style="flex:1;">
+                        <span class="event-type-badge">Webinar</span>
+                        <div class="event-title">Scholarship Masterclass — Everything You Need to Know</div>
+                        <div class="event-meta">🌐 Online · 6:00 PM – 7:00 PM GST</div>
+                        <div class="event-reg" onclick="document.getElementById('enquiry').scrollIntoView({behavior:'smooth'})">Register Free →</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAMPUS EXPERIENCE -->
+    <section class="campus-section" id="campus">
+        <div class="container">
+            <div class="section-head fade-in">
+                <span class="section-tag">Campus Life</span>
+                <h2 class="section-headline">Dubai Is Your Campus</h2>
+                <p class="section-sub">State-of-the-art labs, innovation hubs, and a student life that matches the city's ambition.</p>
+            </div>
+            <div class="campus-grid fade-in">
+                <div class="campus-card large" style="min-height:420px;background:linear-gradient(160deg,#1c1c1c,#3a0a12);display:flex;align-items:flex-end;padding:28px;">
+                    <div>
+                        <div style="font-family:var(--font-display);font-size:26px;color:white;margin-bottom:6px;">Silicon Oasis Campus</div>
+                        <div style="font-size:14px;color:rgba(255,255,255,.5);">Spread across 14 acres in Dubai's tech hub</div>
+                        <div class="campus-card-label" style="position:relative;bottom:auto;left:auto;margin-top:16px;display:inline-block;">Dubai Silicon Oasis</div>
+                    </div>
+                </div>
+                <div class="campus-card" style="background:linear-gradient(135deg,#0a2a4a,#051525);display:flex;flex-direction:column;justify-content:center;padding:24px;">
+                    <div style="font-size:28px;margin-bottom:8px;">🔬</div>
+                    <div style="font-family:var(--font-display);font-size:17px;color:white;margin-bottom:6px;">Research Labs</div>
+                    <div style="font-size:13px;color:rgba(255,255,255,.45);">AI, Robotics, Biotech, IoT — 8 specialised labs</div>
+                    <div class="campus-card-label" style="position:relative;bottom:auto;left:auto;margin-top:16px;display:inline-block;">World-class equipment</div>
+                </div>
+                <div class="campus-card" style="background:linear-gradient(135deg,#1a4a1a,#0a240a);display:flex;flex-direction:column;justify-content:center;padding:24px;">
+                    <div style="font-size:28px;margin-bottom:8px;">🏟️</div>
+                    <div style="font-family:var(--font-display);font-size:17px;color:white;margin-bottom:6px;">Student Life</div>
+                    <div style="font-size:13px;color:rgba(255,255,255,.45);">60+ clubs, sports courts, cultural festivals</div>
+                    <div class="campus-card-label" style="position:relative;bottom:auto;left:auto;margin-top:16px;display:inline-block;">Culture & community</div>
+                </div>
+                <div class="campus-card" style="background:linear-gradient(135deg,#3a2a0a,#1e1505);display:flex;flex-direction:column;justify-content:center;padding:24px;">
+                    <div style="font-size:28px;margin-bottom:8px;">🏠</div>
+                    <div style="font-family:var(--font-display);font-size:17px;color:white;margin-bottom:6px;">Student Housing</div>
+                    <div style="font-size:13px;color:rgba(255,255,255,.45);">Fully furnished rooms from AED 1,800/month</div>
+                    <div class="campus-card-label" style="position:relative;bottom:auto;left:auto;margin-top:16px;display:inline-block;">On-campus living</div>
+                </div>
+                <div class="campus-card" style="background:linear-gradient(135deg,#2a0a3a,#150520);display:flex;flex-direction:column;justify-content:center;padding:24px;">
+                    <div style="font-size:28px;margin-bottom:8px;">💻</div>
+                    <div style="font-family:var(--font-display);font-size:17px;color:white;margin-bottom:6px;">Innovation Hub</div>
+                    <div style="font-size:13px;color:rgba(255,255,255,.45);">Startup incubator with seed funding access</div>
+                    <div class="campus-card-label" style="position:relative;bottom:auto;left:auto;margin-top:16px;display:inline-block;">Build your startup here</div>
+                </div>
+            </div>
+            <div class="virtual-tour-banner fade-in">
+                <div class="virtual-tour-text">
+                    <h3>Can't visit in person? Take a virtual tour.</h3>
+                    <p>Walk through our campus from anywhere in the world — 360° immersive experience available now.</p>
+                </div>
+                <a href="#" class="btn btn-red btn-lg">🎥 Start Virtual Tour</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ + CHAT -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-head fade-in" style="text-align:center;max-width:540px;margin:0 auto 52px;">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-headline">Questions? We've Got Answers.</h2>
+            </div>
+            <div class="faq-layout">
+                <div>
+                    <div class="faq-item open fade-in" onclick="toggleFaq(this)">
+                        <div class="faq-q"><span>What are the eligibility requirements for UG admission?</span>
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-a">You need a minimum of 75% in 10+2 (or equivalent) with Physics, Chemistry & Maths. Admission is based on BITSAT score. International students can apply with SAT/ACT scores or equivalent national exams.</div>
+                    </div>
+                    <div class="faq-item fade-in" onclick="toggleFaq(this)">
+                        <div class="faq-q"><span>What scholarships are available?</span>
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-a">We offer merit-based scholarships covering 25%–100% of tuition fees. There are also need-based grants, industry-sponsored scholarships from partners like Google and Microsoft, and UAE government scholarships for Emirati students.</div>
+                    </div>
+                    <div class="faq-item fade-in" onclick="toggleFaq(this)">
+                        <div class="faq-q"><span>Can international students apply?</span>
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-a">Yes. RGN pune welcomes students from 40+ countries. Our international admissions team guides you through the student visa process, accommodation, and orientation. Language of instruction is English throughout.</div>
+                    </div>
+                    <div class="faq-item fade-in" onclick="toggleFaq(this)">
+                        <div class="faq-q"><span>Is the degree globally recognised?</span>
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-a">RGN Pilani holds NAAC A++ accreditation — India's highest. Our degrees are recognised by UAE's KHDA, the QS World Rankings system, and accepted by employers across 40+ countries including the US, UK, EU, and GCC.</div>
+                    </div>
+                    <div class="faq-item fade-in" onclick="toggleFaq(this)">
+                        <div class="faq-q"><span>What is the total cost of studying here?</span>
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-a">Tuition ranges from AED 62,000–68,000/year. On-campus accommodation starts at AED 1,800/month. Living costs in Dubai Silicon Oasis are significantly lower than central Dubai. Full cost breakdown is in our downloadable brochure.</div>
+                    </div>
+                </div>
+                <div class="chat-widget fade-in">
+                    <div class="chat-avatar">💬</div>
+                    <h3>Still have questions?</h3>
+                    <p>Our admissions counsellors are online right now. Get answers in minutes — not days.</p>
+                    <button class="wa-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Chat on WhatsApp
+        </button>
+                    <div class="chat-divider">— or —</div>
+                    <button class="btn btn-outline" style="width:100%;padding:12px;" onclick="document.getElementById('enquiry').scrollIntoView({behavior:'smooth'})">Fill Enquiry Form</button>
+                    <div style="margin-top:16px;font-size:12px;color:var(--grey-500);">⏱ Average response time: under 30 minutes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SMART ENQUIRY FORM -->
+    <section class="enquiry-section" id="enquiry">
+        <div class="container" style="padding:88px 24px;">
+            <div class="enquiry-inner">
+                <div class="enquiry-left fade-in">
+                    <h2>Ready to Start?<br/>Let's Make It Happen.</h2>
+                    <p>Fill out this quick form and our admissions team will reach out within 24 hours with a personalised roadmap — tailored to your profile and goals.</p>
+                    <ul class="enquiry-perks">
+                        <li>
+                            <div class="perk-check">✓</div>Free 1:1 counselling call with an admissions advisor</li>
+                        <li>
+                            <div class="perk-check">✓</div>Personalised scholarship assessment</li>
+                        <li>
+                            <div class="perk-check">✓</div>Full programme brochure delivered instantly</li>
+                        <li>
+                            <div class="perk-check">✓</div>WhatsApp follow-up within 2 hours</li>
+                        <li>
+                            <div class="perk-check">✓</div>Zero commitment — just a conversation</li>
+                    </ul>
+                </div>
+                <div class="form-card fade-in">
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress-step done" id="step-ind-1"></div>
+                        <div class="progress-step" id="step-ind-2"></div>
+                        <div class="progress-step" id="step-ind-3"></div>
+                        <div class="progress-label" id="stepLabel">Step 1 of 3</div>
+                    </div>
+
+                    <!-- Step 1 -->
+                    <div class="step-panel active" id="step1">
+                        <div class="form-title">Tell us about yourself</div>
+                        <div class="form-grid">
+                            <div class="form-group"><label>First Name</label><input type="text" placeholder="Aanya" /></div>
+                            <div class="form-group"><label>Last Name</label><input type="text" placeholder="Rathore" /></div>
+                            <div class="form-group"><label>Email Address</label><input type="email" placeholder="aanya@email.com" /></div>
+                            <div class="form-group"><label>Phone / WhatsApp</label><input type="tel" placeholder="+971 50 000 0000" /></div>
+                            <div class="form-group full"><label>Nationality</label><select><option>-- Select Country --</option><option>India</option><option>UAE</option><option>Pakistan</option><option>Philippines</option><option>Bangladesh</option><option>Egypt</option><option>Other</option></select></div>
+                        </div>
+                        <div class="form-btn-row"><button class="btn btn-red btn-lg" style="width:100%;" onclick="goStep(2)">Continue →</button></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-panel" id="step2">
+                        <div class="form-title">What are you looking for?</div>
+                        <div class="form-grid">
+                            <div class="form-group full"><label>Programme Level</label><select id="formLevel"><option>Undergraduate (UG)</option><option>Postgraduate (PG)</option><option>PhD</option></select></div>
+                            <div class="form-group full"><label>Field of Interest</label><select><option>Computer Science / IT</option><option>Electrical & Electronics</option><option>Chemical Engineering</option><option>Data Science & AI</option><option>Business / MBA</option><option>Other</option></select></div>
+                            <div class="form-group full"><label>When do you plan to start?</label><select><option>September 2025</option><option>January 2026</option><option>September 2026</option><option>Still exploring</option></select></div>
+                        </div>
+                        <div class="form-btn-row">
+                            <button class="btn btn-outline" style="flex:1;" onclick="goStep(1)">← Back</button>
+                            <button class="btn btn-red btn-lg" style="flex:2;" onclick="goStep(3)">Continue →</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-panel" id="step3">
+                        <div class="form-title">Almost done — one last thing</div>
+                        <div class="form-grid">
+                            <div class="form-group full"><label>Your highest qualification</label><select><option>10+2 / A-Levels (for UG)</option><option>Bachelor's Degree (for PG)</option><option>Master's Degree (for PhD)</option></select></div>
+                            <div class="form-group full"><label>How did you hear about us?</label><select><option>Google Search</option><option>Instagram / Facebook</option><option>Friend / Family</option><option>School / College</option><option>Education Fair</option><option>Other</option></select></div>
+                            <div class="form-group full"><label>Any specific questions for us? (optional)</label><input type="text" placeholder="e.g. scholarship eligibility, visa process..." /></div>
+                        </div>
+                        <div class="form-btn-row">
+                            <button class="btn btn-outline" style="flex:1;" onclick="goStep(2)">← Back</button>
+                            <button class="btn btn-red btn-lg" style="flex:2;" onclick="submitForm()">Submit Application →</button>
+                        </div>
+                    </div>
+
+                    <!-- Success -->
+                    <div class="step-panel" id="stepSuccess" style="text-align:center;padding:20px 0;">
+                        <div style="font-size:52px;margin-bottom:16px;">🎉</div>
+                        <h3 style="font-family:var(--font-display);font-size:24px;margin-bottom:10px;">You're on your way!</h3>
+                        <p style="font-size:15px;color:var(--grey-500);margin-bottom:24px;">Our admissions team will reach out within 24 hours. Check your WhatsApp — we'll send a confirmation shortly.</p>
+                        <button class="wa-btn" style="max-width:280px;margin:0 auto;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Join WhatsApp Group
+          </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2L4 6v6c0 5.5 3.4 10.7 8 12 4.6-1.3 8-6.5 8-12V6l-8-4z"/></svg></div>
+                        <div class="logo-text" style="color:white;">BITS Pilani<span style="color:rgba(255,255,255,.4);">Dubai Campus</span></div>
+                    </div>
+                    <p>Shaping engineers and leaders who define the future — from Dubai to the world.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Programmes</h4>
+                    <ul>
+                        <li><a href="#">B.E. Computer Science</a></li>
+                        <li><a href="#">B.E. Electrical</a></li>
+                        <li><a href="#">B.E. Chemical</a></li>
+                        <li><a href="#">M.E. Data Science</a></li>
+                        <li><a href="#">MBA</a></li>
+                        <li><a href="#">PhD</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Admissions</h4>
+                    <ul>
+                        <li><a href="#">How to Apply</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">Eligibility</a></li>
+                        <li><a href="#">International Students</a></li>
+                        <li><a href="#">Fees & Finances</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Campus</h4>
+                    <ul>
+                        <li><a href="#">Virtual Tour</a></li>
+                        <li><a href="#">Student Housing</a></li>
+                        <li><a href="#">Research Labs</a></li>
+                        <li><a href="#">Sports & Culture</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 RGN Pilani Dubai Campus. All rights reserved.</p>
+                <div class="accred-badges">
+                    <div class="badge">NAAC A++</div>
+                    <div class="badge">KHDA Approved</div>
+                    <div class="badge">QS Ranked</div>
+                    <div class="badge">CAA Accredited</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BROCHURE MODAL -->
+    <div class="modal-overlay" id="brochureModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <h3>Get Your Free Brochure</h3>
+            <p>Enter your details and we'll send the 2025 Programme Guide instantly to your email.</p>
+            <div class="form-group" style="margin-bottom:12px;"><label>Full Name</label><input type="text" placeholder="Your name" /></div>
+            <div class="form-group" style="margin-bottom:12px;"><label>Email Address</label><input type="email" placeholder="your@email.com" /></div>
+            <div class="form-group" style="margin-bottom:20px;"><label>Programme Interest</label><select><option>B.E. Computer Science</option><option>B.E. Electrical</option><option>M.E. Data Science</option><option>MBA</option><option>PhD</option><option>All Programmes</option></select></div>
+            <button class="btn btn-red btn-lg" style="width:100%;" onclick="closeModal()">📥 Send Me the Brochure</button>
+            <p style="font-size:12px;color:var(--grey-500);text-align:center;margin-top:12px;">No spam. We'll also send a WhatsApp confirmation.</p>
+        </div>
+    </div>
+
+    <script>
+        // Nav scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('mainNav');
+            const sticky = document.getElementById('stickyCta');
+            if (window.scrollY > 80) {
+                nav.classList.add('scrolled');
+                sticky.classList.add('visible');
+            } else {
+                nav.classList.remove('scrolled');
+                sticky.classList.remove('visible');
+            }
+        });
+
+        // Hero toggle
+        const toggleData = {
+            UG: '4-year B.E. / B.Tech programs with 100% placement support',
+            PG: '2-year postgraduate programs designed for career acceleration',
+            PhD: 'Fully-funded research programs with stipend and housing'
+        };
+        document.getElementById('programToggle').querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('#programToggle button').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                document.getElementById('heroToggleText').textContent = toggleData[this.dataset.prog];
+            });
+        });
+
+        // Programme filter
+        document.getElementById('filterBar').querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('#filterBar .filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                const f = this.dataset.filter;
+                document.querySelectorAll('.prog-card').forEach(card => {
+                    if (f === 'all' || card.dataset.level === f || card.dataset.field === f) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Event filter
+        document.querySelectorAll('[data-efilter]').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('[data-efilter]').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                const f = this.dataset.efilter;
+                document.querySelectorAll('.event-card').forEach(card => {
+                    if (f === 'all' || card.dataset.etype === f) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // FAQ
+        function toggleFaq(el) {
+            const wasOpen = el.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+            if (!wasOpen) el.classList.add('open');
+        }
+
+        // Multi-step form
+        function goStep(n) {
+            document.querySelectorAll('.step-panel').forEach(p => p.classList.remove('active'));
+            document.getElementById('step' + n).classList.add('active');
+            [1, 2, 3].forEach(i => {
+                const ind = document.getElementById('step-ind-' + i);
+                ind.classList.toggle('done', i <= n);
+            });
+            document.getElementById('stepLabel').textContent = 'Step ' + n + ' of 3';
+        }
+
+        function submitForm() {
+            document.querySelectorAll('.step-panel').forEach(p => p.classList.remove('active'));
+            document.getElementById('stepSuccess').classList.add('active');
+            document.getElementById('progressBar').querySelectorAll('.progress-step').forEach(s => s.classList.add('done'));
+            document.getElementById('stepLabel').textContent = 'Completed ✓';
+        }
+
+        // Modal
+        function openModal() {
+            document.getElementById('brochureModal').classList.add('open');
+        }
+
+        function closeModal() {
+            document.getElementById('brochureModal').classList.remove('open');
+        }
+        document.getElementById('brochureModal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+
+        // Fade-in observer
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: .12
+        });
+        document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+    </script>
+</body>
+
+</html>
